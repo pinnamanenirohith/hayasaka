@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hayasaka-deployment
+  namespace: music-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: hayasaka
+  template:
+    metadata:
+      labels:
+        app: hayasaka
+    spec:
+      containers:
+        - name: hayasaka-container
+          image: rohithpinnamaneni/hayasaka:latest
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 3000
+          env:
+            - name: PORT
+              value: "3000"
+            - name: HOST
+              value: "0.0.0.0"

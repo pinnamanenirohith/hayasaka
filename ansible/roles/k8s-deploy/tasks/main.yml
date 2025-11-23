@@ -1,0 +1,15 @@
+---
+- name: Apply Namespace
+  kubernetes.core.k8s:
+    state: present
+    src: /mnt/d/Projects/hayasaka/Kubernetes/namespace.yaml
+
+- name: Apply Deployment
+  kubernetes.core.k8s:
+    state: present
+    src: /mnt/d/Projects/hayasaka/Kubernetes/deployment.yaml
+
+- name: Apply Service
+  kubernetes.core.k8s:
+    state: present
+    src: /mnt/d/Projects/hayasaka/Kubernetes/service.yaml

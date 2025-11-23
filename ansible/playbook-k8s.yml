@@ -1,0 +1,7 @@
+---
+- name: Deploy Music App on Kubernetes
+  hosts: local
+  become: false
+
+  roles:
+    - k8s-deploy

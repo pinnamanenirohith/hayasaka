@@ -1,0 +1,13 @@
+---
+- name: Pull latest image from Docker Hub
+  community.docker.docker_image:
+    name: rohithpinnamaneni/hayasaka:latest
+    source: pull
+
+- name: Run container
+  community.docker.docker_container:
+    name: music-app
+    image: rohithpinnamaneni/hayasaka:latest
+    state: started
+    ports:
+      - "3001:3000"

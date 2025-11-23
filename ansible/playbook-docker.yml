@@ -1,0 +1,7 @@
+---
+- name: Deploy Docker Container for Music App
+  hosts: local
+  become: false
+
+  roles:
+    - docker-deploy
