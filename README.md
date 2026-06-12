@@ -1,3 +1,17 @@
+## Deployment & DevOps Learning Project
+
+This repository was used as part of hands-on learning for **Docker, Kubernetes, Ansible, and deployment workflows** during academic project work and DevOps practice.
+
+The **Hayasaka music streaming application** was used as the base/reference project to gain practical experience in:
+
+* Docker containerization
+* Kubernetes deployment
+* Ansible automation
+* Application deployment workflows
+* CI/CD and DevOps fundamentals
+
+**Note:** The original Hayasaka application architecture and implementation belong to the original contributors. This repository was primarily used for deployment and infrastructure learning.
+   
    [![Project Banner](https://github-production-user-asset-6210df.s3.amazonaws.com/99420590/256470702-de779111-e63e-4ecc-93d1-e79edadf19ed.png)](https://hayasaka.live/)
 
 This is a free music streaming web application built with Next.js and powered by the [savan API](https://github.com/sumitkolhe/jiosaavn-api). The app allows users to search and stream music from a vast collection of songs available on the Saavn platform.
